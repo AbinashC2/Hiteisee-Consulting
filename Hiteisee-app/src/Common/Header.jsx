@@ -53,9 +53,7 @@ export const Header = () => {
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
+              
             </ul>
           </nav>
         </header>
