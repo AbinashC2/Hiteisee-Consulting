@@ -145,7 +145,10 @@ url("../assets/main-bgi2.png");
     position: relative;
     width: 100%;
 }
+.request-quote{
 
+
+}
 .carousel {
     display: flex;
     overflow: hidden;
@@ -163,8 +166,25 @@ url("../assets/main-bgi2.png");
     margin: 0 20px; /* Adjust spacing between logos */
     flex-shrink: 0; /* Prevent logos from shrinking */
 }
+.img-parent{
+    width: 100%;
+    background-color: #ffffff;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .stat-img{
-    width: 90%;
+    width: 100%;
+    background-color: #d83f3f;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stat-img img{
+   width: 100%;
+   height: 100%;
 }
 
 @keyframes scroll {

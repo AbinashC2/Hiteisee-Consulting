@@ -134,9 +134,13 @@ const Home = () => {
           </div>
           <br /><br /><br />
 
-        <div className="stat-img">
+
+      <div className="img-parent">
+      <div className="stat-img">
         <img src={stats} alt="" />
         </div>
+      </div>
+
 
           
         </div> <br /><br /><br /><br />
