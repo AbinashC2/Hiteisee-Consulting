@@ -19,8 +19,11 @@
 .home {
     width: 100vw;
     height: 100vh;
-    background: 
+    /* background: 
 linear-gradient(90deg, rgba(60, 62, 84, 0.9) 0%, rgba(60, 62, 84, 0) 100%), 
+url("../assets/main-bgi2.png"); */
+background: 
+linear-gradient(90deg, rgba(124, 212, 141, 0.3) 0%, rgba(34, 139, 34, 0) 100%), 
 url("../assets/main-bgi2.png");
     background-size: cover; 
     background-position: center; 
@@ -123,8 +126,8 @@ url("../assets/main-bgi2.png");
 }
 
 .customers-heading {
-
-    font-size: 2em;
+    margin-block: 30px;
+    font-size: 3em;
     margin-bottom: 30px;
     color: #333;
     position: relative; 

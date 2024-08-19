@@ -14,6 +14,16 @@
     color: #333;
     padding-bottom: 50px;
 }
+.about-banner-img {
+    height: 35vh;
+    background-image: linear-gradient(90deg, rgba(34, 139, 34, 0.3) 0%, rgba(34, 139, 34, 0.3) 100%),
+     url("../assets/banner_image.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .about-us-banner {
     width: 100%;
@@ -27,6 +37,9 @@
 .about-us-heading {
     font-size: 3em;
     font-weight: bold;
+    color: #041939;
+    font-size: 48px;
+    font-weight: 600;
 }
 
 .about-us-content {
@@ -37,7 +50,7 @@
 
 .about-us-section {
     margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #D9E7FC;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -45,9 +58,14 @@
 
 .section-heading {
     font-size: 2em;
-    color: #ff9800; /* Orange color for headings */
+    background: linear-gradient(90deg, #ff9800 0%, #ffc107 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     margin-bottom: 15px;
 }
+
 
 .section-text {
     font-size: 1.1em;
@@ -63,4 +81,61 @@
 
 .values-list li {
     margin-bottom: 8px;
+}
+
+
+
+
+.core_values-container {
+    height: 65vh;
+    background-color: #fff;
+}
+.core_values-content {
+    padding-inline: 10%;
+    padding-block: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.core_values-heading{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 45px;
+    background: linear-gradient(to right, #FF7E00, #FF4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 51px;
+    position: relative;
+}
+.core_values-underline {
+    width: 60px;
+    height: 8px;
+    background-color: #186EEF;
+    border-radius: 5px;
+    /* margin: 0 auto;  */
+    position: relative;
+    top: 10px;
+}
+.core_values-left-container {
+    width: 45vw;
+}
+.core_values-text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #424657;
+}
+.core_values-right-container {
+    width: 45vw;
+}
+.core_values-right-container img {
+    height: 55vh;
+}
+.correct-icon{
+    color: green;
+    font-size: 20px;
+    margin: 5px;
+}
+.span-text{
+    display: flex;
+    align-items: start;
 }

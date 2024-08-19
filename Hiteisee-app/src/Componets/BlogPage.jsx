@@ -38,7 +38,7 @@ const blogs = [
 const BlogPage = () => {
   return (
     <div className="blog-container">
-      <div className="services-banner">
+      <div className="services-banner2">
         <h2 className="services-heading">Blogs </h2>
       </div>
       {/* <h1 className="blog-title">Blog</h1> */}

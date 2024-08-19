@@ -1,43 +1,121 @@
 import React from "react";
 import "./Services.css";
-import logo from "../assets/blogs.jpg";
-import strategyIcon from "../assets/stats.png"; 
-import irIcon from "../assets/stats.png";
-import ldIcon from "../assets/stats.png";
+import ITITES from '../assets/IT ITES.svg';
+import SmartInfra from '../assets/smart infra.svg';
+import BusinessAdvisory from '../assets/business advisory.svg';
 
 const Services = () => {
+
   return (
     <div className="services-container">
-      <div className="services-banner">
-        <img src={logo} alt="Company Logo" className="services-logo" />
+      <div className="service-banner">
         <h2 className="services-heading">Our Best Services</h2>
       </div>
 
       <div className="services-box">
-        <div className="card-grid">
-          <div className="service-card">
-            <img src={strategyIcon} alt="Strategy Consulting" className="service-icon" />
-            <h3>Strategy Consulting Services</h3>
-            <p>Management of Organizational Values, Redefining business strategies</p>
-            {/* <a href="#strategy-consulting" className="read-more">
-              Read more...
-            </a> */}
+        <div className="services-box-header">
+          <div className="services-box-header-heading">
+            <p>We offer a comprehensive range of services</p>
           </div>
-          <div className="service-card">
-            <img src={irIcon} alt="Strategic IR" className="service-icon" />
-            <h3>Strategic IR Services</h3>
-            <p>Develop IR Policies, Design IR Systems, Processes, IR Strategies formulation</p>
-            {/* <a href="#ir-services" className="read-more">
-              Read more...
-            </a> */}
+          <div className="services-box-header-text">
+            <p>Empower businesses to embrace innovation, optimize operations, and achieve sustainable growth with SOUL.</p>
           </div>
-          <div className="service-card">
-            <img src={ldIcon} alt="Learning & Development" className="service-icon" />
-            <h3>Strategic Learning & Development Services</h3>
-            <p>L&D Policies, Design L&D Systems, Processes, Training Needs Assessment (TNA)</p>
-            {/* <a href="#learning-development" className="read-more">
-              Read more...
-            </a> */}
+        </div>
+
+        <div className='service-section-container1'>
+          <div className="services1">
+            <div className="cards">
+              <div className="card">
+                <div className="card-img">
+                  <img src={ITITES} alt="IT, ITES & IOT" />
+                </div>
+                <div className="card-title">
+                  IT, ITES & IOT
+                </div>
+                <div className="card-desc">
+                  <p>Holistic digital transformation combining design & development of apps & websites, data analytics, and smart device connectivity.</p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-img">
+                  <img src={SmartInfra} alt="Smart Infrastructure" />
+                </div>
+                <div className="card-title">
+                  Smart Infrastructure
+                </div>
+                <div className="card-desc">
+                  <p>Integration of advanced technologies to optimize infrastructure management, enhance efficiency, and improve sustainability.</p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-img">
+                  <img src={BusinessAdvisory} alt="Business Advisory" />
+                </div>
+                <div className="card-title">
+                Strategy Consulting Services
+                </div>
+                <div className="card-desc">
+                  <p>Management of Organizational Values
+                  Redefining business strategies.</p>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="card-img">
+                  <img src={BusinessAdvisory} alt="Business Advisory" />
+                </div>
+                <div className="card-title">
+                Strategy Consulting Services
+                </div>
+                <div className="card-desc">
+                  <p>Management of Organizational Values
+                  Redefining business strategies.</p>
+                </div>
+              </div>
+
+
+              <div className="card">
+                <div className="card-img">
+                  <img src={BusinessAdvisory} alt="Business Advisory" />
+                </div>
+                <div className="card-title">
+                Strategy Consulting Services
+                </div>
+                <div className="card-desc">
+                  <p>Management of Organizational Values
+                  Redefining business strategies.</p>
+                </div>
+              </div>
+
+
+              <div className="card">
+                <div className="card-img">
+                  <img src={BusinessAdvisory} alt="Business Advisory" />
+                </div>
+                <div className="card-title">
+                Strategy Consulting Services
+                </div>
+                <div className="card-desc">
+                  <p>Management of Organizational Values
+                  Redefining business strategies.</p>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="card-img">
+                  <img src={BusinessAdvisory} alt="Business Advisory" />
+                </div>
+                <div className="card-title">
+                Strategy Consulting Services
+                </div>
+                <div className="card-desc">
+                  <p>Management of Organizational Values
+                  Redefining business strategies.</p>
+                </div>
+              </div>
+
+
+            </div>
           </div>
         </div>
       </div>

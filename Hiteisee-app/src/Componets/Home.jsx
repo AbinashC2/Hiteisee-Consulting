@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import img from '../assets/partners.jpg';
 import Customers from './Customers';
 import RequestQuote from './RequestQuote';
+import ITITES from "../assets/IT ITES.svg";
+import SmartInfra from '../assets/smart infra.svg';
+import BusinessAdvisory from '../assets/business advisory.svg';
 import stats from '../assets/stats.png';
 
 const Home = () => {
@@ -58,9 +61,9 @@ const Home = () => {
       {/* Services Section */}
       <div className="services-container">
         <h2 className='customers-heading'>Our Services</h2>
-        <div className="services-box">
+        {/* <div className="services-box">
           <div className="card-grid">
-            {/* Service Cards */}
+         
             <div className="service-card">
               <h3>Strategy Consulting Services</h3>
               <ul>
@@ -143,9 +146,55 @@ const Home = () => {
 
 
           
-        </div> <br /><br /><br /><br />
+        </div>  */}
+               <div className='service-section-container1'>
+          <div className="services1">
+            <div className="cards">
+              <div className="card">
+                <div className="card-img">
+                  <img src={ITITES} alt="IT, ITES & IOT" />
+                </div>
+                <div className="card-title">
+                  IT, ITES & IOT
+                </div>
+                <div className="card-desc">
+                  <p>Holistic digital transformation combining design & development of apps & websites, data analytics, and smart device connectivity.</p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-img">
+                  <img src={SmartInfra} alt="Smart Infrastructure" />
+                </div>
+                <div className="card-title">
+                  Smart Infrastructure
+                </div>
+                <div className="card-desc">
+                  <p>Integration of advanced technologies to optimize infrastructure management, enhance efficiency, and improve sustainability.</p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-img">
+                  <img src={BusinessAdvisory} alt="Business Advisory" />
+                </div>
+                <div className="card-title">
+                Strategy Consulting Services
+                </div>
+                <div className="card-desc">
+                  <p>Management of Organizational Values
+                  Redefining business strategies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <br /><br /><br /><br />
 
-
+        <div className="img-parent">
+      <div className="stat-img">
+        <img src={stats} alt="" />
+        </div>
+      </div>
 
       {/* Project Statistics Section */}
      

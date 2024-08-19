@@ -1,164 +1,169 @@
+/* Base Styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Services Container */
 .services-container {
-    padding: 40px 20px;
-    background-color: #fff; 
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.services-box {
-    background-color: #E9F4E3; 
-    padding: 20px;
-    width: 100vw; 
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px; 
-}
-
-.services-banner {
-    background: url('../assets/career2.jpg') no-repeat center center;
+.service-banner {
+    height: 35vh;
+    width: 100%;
+    background: 
+    linear-gradient(rgba(40, 97, 57, 0.5), rgba(40, 97, 57, 0.5)),
+    url('../assets/service.svg') no-repeat center center;
     background-size: cover;
     text-align: center;
-    padding: 150px 20px;
     position: relative;
-    color: white;
-    width: 100%;
     margin-bottom: 30px;
 }
 
-.services-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-}
-
 .services-heading {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ffffff;
     position: relative;
-    z-index: 1; 
-    font-size: 2em; 
+    z-index: 1;
 }
 
-.services-logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    height: 60px; 
-    width: auto;
-    z-index: 1; 
+/* Service Box */
+.services-box {
+    background-color: #E9F4E3;
+    padding: 40px;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-bottom: 50px;
 }
 
-.card-grid {
+.services-box-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-box-header-heading {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: linear-gradient(to right, #FF7E00, #FF4500);
+}
+.services-box-header-heading p {
+    background: linear-gradient(to right, #FF7E00, #FF4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.services-box-header-text {
+    font-size: 1.2em;
+    color: #2B2E3B;
+}
+
+/* Cards Section */
+.cards {
     display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 146px;
     flex-wrap: wrap;
-    gap: 40px; 
-    justify-content: center;
-    max-width: 100%;
+    padding-inline: 11%;
 }
 
-.service-card {
-    background-color: #fff; 
-    padding: 20px;
-    width: 320px; 
-    height: auto; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card {
+    width: 23%;  /* Decreased size */
+    padding: 20px 16px;  /* Adjusted padding */
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 8px; 
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.service-card h3 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    color: #3C3E54;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
+.card-img {
+    z-index: 2;  /* Ensure image stays above the hover background */
 }
 
-.service-card p {
-    margin-bottom: 15px;
-    color: #6D6F89;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    background-color: #94F092;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.service-card:hover h3, .service-card:hover p {
-    color: #3C3E54;
-}
-
-.service-icon {
-    width: 60px; 
-    height: 60px; 
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.read-more {
+.card-img img {
+    width: 100%;
+    height: auto;
     display: block;
+}
+
+.card-title {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #041939;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 2;  /* Ensure text stays above the hover background */
+}
+
+.card-desc {
+    font-size: 0.95em;
+    color: #2B2E3B;
+    text-align: center;
     margin-top: 10px;
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    z-index: 2;  /* Ensure text stays above the hover background */
 }
 
-.read-more:hover {
-    color: #0056b3;
+/* Hover and Active States */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to bottom, #1895EF, #186EEF); */
+        background: linear-gradient(to bottom, #6dc246, #48c246);
+
+   
+    z-index: 1;
+    transition: top 0.3s ease;
+    opacity: 0.7;  /* Further reduce opacity to show content and images */
 }
 
+.card:hover::before,
+.card.active::before {
+    top: 0;
+}
+
+.card:hover .card-title,
+.card.active .card-title,
+.card:hover .card-desc,
+.card.active .card-desc {
+    color: #ffffff;  /* Ensure text is visible */
+}
+
+.card:hover .card-img img,
+.card.active .card-img img {
+    opacity: 1;  /* Ensure image is fully visible on hover */
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    .services-banner {
-        padding: 100px 10px; 
+    .cards {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .services-heading {
-        font-size: 1.5em; 
-    }
-
-    .services-box {
-        width: 90vw; 
-    }
-
-    .service-card {
+    .card {
         width: 100%;
-        height: auto; 
-    }
-}
-
-@media (max-width: 480px) {
-    .services-banner {
-        padding: 80px 5px; 
-    }
-
-    .services-heading {
-        font-size: 1.2em; 
-    }
-
-    .services-box {
-        width: 100vw; 
-    }
-
-    .service-card {
-        width: 100%; 
-        height: auto; 
     }
 }

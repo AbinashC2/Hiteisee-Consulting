@@ -1,8 +1,7 @@
 /* BlogPage.css */
 
 .blog-container {
-    padding: 20px;
-    max-width: 1200px;
+ 
     margin: 0 auto;
   }
   
@@ -12,8 +11,12 @@
     font-size: 2rem;
     color: #333;
   }
-  .services-banner {
-    background: url('../assets/blogs.jpg') no-repeat center center;
+  .services-banner2 {
+    background: 
+    linear-gradient(90deg, rgba(34, 139, 34, 0.3) 0%, rgba(34, 139, 34, 0.3) 100%),
+    url('../assets/blogs.jpg') no-repeat center center;
+background-size: cover;
+
     background-size: cover;
     text-align: center;
     padding: 150px 20px; 
@@ -34,12 +37,13 @@
     background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
 }
   
-  .blog-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  justify-content: center;
+  padding-block: 3%;
+}
   
   .blog-card {
     background: #fff;
