@@ -1,5 +1,3 @@
-
-
 /* General Styles */
 * {
     padding: 0;
@@ -19,12 +17,9 @@
 .home {
     width: 100vw;
     height: 100vh;
-    /* background: 
-linear-gradient(90deg, rgba(60, 62, 84, 0.9) 0%, rgba(60, 62, 84, 0) 100%), 
-url("../assets/main-bgi2.png"); */
-background: 
-linear-gradient(90deg, rgba(124, 212, 141, 0.3) 0%, rgba(34, 139, 34, 0) 100%), 
-url("../assets/main-bgi2.png");
+    background: 
+    linear-gradient(90deg, rgba(40, 40, 40, 0.3) 0%, rgba(0, 0, 0, 0) 100%), 
+    url("../assets/main-bgi2.png");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -88,8 +83,8 @@ url("../assets/main-bgi2.png");
     justify-content: center;
     align-items: center;
 }
+
 .project-stats-container {
- 
     padding: 40px 20px;
     display: flex;
     justify-content: space-around; 
@@ -99,7 +94,6 @@ url("../assets/main-bgi2.png");
     overflow: hidden;
     box-shadow: 0px 4px 22px 0px #4A4F6440;
     background: #FFFFFF;
-
 }
 
 .project-stat {
@@ -143,32 +137,6 @@ url("../assets/main-bgi2.png");
     border-radius: 2px; /* Rounded edges for the line */
 }
 
-.customers-grid {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-.request-quote{
-
-
-}
-.carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
-    animation: scroll 30s linear infinite; /* Slower animation */
-}
-
-.partner-img {
-    max-height: 100px; /* Adjust height to fit your design */
-    margin: 0 20px; /* Adjust spacing between logos */
-    flex-shrink: 0; /* Prevent logos from shrinking */
-}
 .img-parent{
     width: 100%;
     background-color: #ffffff;
@@ -177,6 +145,7 @@ url("../assets/main-bgi2.png");
     justify-content: center;
     align-items: center;
 }
+
 .stat-img{
     width: 100%;
     background-color: #d83f3f;
@@ -185,30 +154,116 @@ url("../assets/main-bgi2.png");
     justify-content: center;
     align-items: center;
 }
+
 .stat-img img{
    width: 100%;
    height: 100%;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
+/* Responsive Styles */
 
-@media (max-width: 768px) {
-    .partner-img {
-        max-height: 80px; /* Adjust logo size for smaller screens */
+/* Laptops (1200px and above) */
+@media (min-width: 1200px) {
+    .home {
+        padding: 40px;
     }
-}
 
-@media (max-width: 480px) {
-    .partner-img {
-        max-height: 60px; /* Further adjust logo size for very small screens */
+    .welcome {
+        font-size: 4em;
+    }
+
+    .text {
+        font-size: 5em;
     }
 }
 
+/* Tablets (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .home {
+        align-items: center; /* Center align items */
+    }
 
+    .heading-home {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .welcome {
+        font-size: 2.5em;
+    }
+
+    .text {
+        font-size: 3.5em;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+
+    .project-stats-container {
+        width: 90vw;
+        flex-direction: column; /* Stack the stats vertically */
+        padding: 20px;
+    }
+
+    .stat-number {
+        font-size: 3em;
+    }
+
+    .stat-label {
+        font-size: 1.2em;
+    }
+}
+
+/* Phones (up to 767px) */
+@media (max-width: 767px) {
+    .home {
+        padding: 20px;
+        height: auto;
+    }
+
+    .heading-home {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .welcome {
+        font-size: 1.5em;
+    }
+
+    .text {
+        font-size: 1.5em;
+    }
+    .hiteisee {
+        color: #44c948;
+        font-weight: 700;
+    }
+
+    .button-link {
+        padding: 4px 11px;
+        font-size: 13px;
+    }
+ 
+
+    .project-stats-container {
+        width: 100%;
+        flex-direction: column; /* Stack the stats vertically */
+        padding: 10px;
+    }
+
+    .stat-number {
+        font-size: 2.5em;
+    }
+
+    .stat-label {
+        font-size: 1em;
+    }
+
+    .customers-heading {
+        font-size: 2em;
+    }
+
+    .customers-heading::after {
+        width: 70%;
+    }
+}

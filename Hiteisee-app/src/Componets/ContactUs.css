@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.contact-us-header{
+.contact-us-header {
     height: 35vh;
-    background:  linear-gradient(90deg, rgba(34, 139, 34, 0.3) 0%, rgba(34, 139, 34, 0.3) 100%),
-    url('../assets/banner_image.svg');
+    background: linear-gradient(90deg, rgba(34, 139, 34, 0.3) 0%, rgba(34, 139, 34, 0.3) 100%), url('../assets/banner_image.svg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -18,12 +16,7 @@
     align-items: center;
 }
 
-/* .contact-us-page{
-    
-} */
-
-
-.contact-us-heading h1{
+.contact-us-heading h1 {
     font-family: "Poppins";
     font-size: 64px;
     font-weight: 700;
@@ -31,23 +24,22 @@
     text-align: center;
     color: #072E69;
     text-shadow: -2px -2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, 2px 2px 0 #FFFFFF;
-
 }
 
-.contact-us-container{
-    padding: 100px 220px 100px 220px;
+.contact-us-container {
+    padding: 100px 220px;
     gap: 60px;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
 }
 
-.left-contact-us{
-    width: 890px;
+.left-contact-us {
+    width: 100%;
     gap: 44px;
-
 }
 
-.left-contact-us-heading h1{
+.left-contact-us-heading h1 {
     font-family: "Poppins";
     font-size: 44px;
     font-weight: 700;
@@ -56,7 +48,7 @@
     color: #041939;
 }
 
-.left-contact-us-heading p{
+.left-contact-us-heading p {
     padding-top: 5px;
     font-family: "Poppins";
     font-size: 20px;
@@ -66,76 +58,75 @@
     color: #5A5F72;
 }
 
-.contact-us-main-container{
+.contact-us-main-container {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.help-title{
+.help-title {
     font-family: "Poppins";
     font-size: 22px;
     font-weight: 600;
     line-height: 34.32px;
     text-align: left;
-    color:  #2B2E3B;
+    color: #2B2E3B;
 }
 
-.help-desc ul{
-    list-style-position: outside; 
-    padding-left: 27px; /* Adjust padding to align numbers with text */
-    margin-top: 5px
+.help-desc ul {
+    list-style-position: outside;
+    padding-left: 27px;
+    margin-top: 5px;
 }
 
-.help-desc li{
+.help-desc li {
     padding-left: 0;
     font-family: "Poppins";
     font-size: 18px;
     font-weight: 500;
     line-height: 28.08px;
     text-align: left;
-    color:  #424657;
+    color: #424657;
 }
 
-.help-desc span{
+.help-desc span {
     font-family: "Poppins";
     font-size: 18px;
     font-weight: 400;
     line-height: 28.08px;
     text-align: left;
-    color:  #424657;
+    color: #424657;
 }
 
-.help-desc a{
+.help-desc a {
     font-family: "Poppins";
     font-size: 18px;
     font-weight: 400;
     line-height: 28.08px;
     text-align: left;
     color: #186EEF;
-
 }
 
-.contact-box{
+.contact-box {
     margin-top: 40px;
-    width: 890px;
-    height: 143px;
+    width: 100%;
+    height: auto;
     gap: 32px;
     border-radius: 12px;
     background: #61A0FF38;
     display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.office-address, .contact-number-contact-page, .email{
+.office-address, .contact-number-contact-page, .email {
     display: flex;
     flex-direction: column;
-    padding: 12px 0px 0px 0px;
     gap: 12px;
-    width: 33%;
     padding-left: 20px;
 }
 
-.contact-icon{
+.contact-icon {
     width: 20px;
     height: 20px;
     padding-right: 14px;
@@ -144,62 +135,56 @@
     color: #186EEF;
 }
 
-.contact-heading{
+.contact-heading {
     font-family: "Poppins";
     font-size: 20px;
     font-weight: 600;
     line-height: 31.2px;
     text-align: left;
     color: #041939;
-
 }
 
-.address-desc{
+.address-desc {
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 400;
     line-height: 24.96px;
     text-align: left;
     color: #041939;
-
 }
 
-.right-contact-us{
-    width: 510px;
+.right-contact-us {
+    width: 100%;
     gap: 24px;
-    
+    margin-top: 40px;
 }
 
-.input-msg{
+.input-msg {
     padding-top: 20px;
     position: relative;
 }
 
-.input-msg input{
-    height: 100px;
-}
-
-#msg-text::placeholder{
+#msg-text::placeholder {
     padding: 15px 15px;
     font-family: "Poppins";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    color:  #73788C;
+    color: #73788C;
 }
 
-#msg-text{
+#msg-text {
     gap: 8px;
     border-radius: 6px;
-    border: 1px solid  #8D92A5;
-    
+    border: 1px solid #8D92A5;
+    width: 100%;
 }
 
-.btn-send{
+.btn-send {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 18px 10px 18px;
+    padding: 10px 18px;
     gap: 6px;
     border-radius: 8px;
     background: linear-gradient(90deg, #1895EF 0%, #186EEF 100%);
@@ -208,17 +193,125 @@
     font-family: "DM Sans";
     font-size: 18px;
     font-weight: 700;
-    line-height: 22.5px;
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
-
+    width: 100%;
 }
 
-.send-icon{
+.send-icon {
     padding-left: 5px;
     width: 100%;
     height: 30px;
     color: #FFFFFF;
-    
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-us-container {
+        padding: 50px 100px;
+    }
+
+    .left-contact-us-heading h1 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .left-contact-us-heading p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .help-title {
+        font-size: 20px;
+    }
+
+    .help-desc li,
+    .help-desc span,
+    .help-desc a {
+        font-size: 16px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .right-contact-us {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us-container {
+        padding: 30px 50px;
+    }
+
+    .left-contact-us-heading h1 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .left-contact-us-heading p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .help-title {
+        font-size: 18px;
+    }
+
+    .help-desc li,
+    .help-desc span,
+    .help-desc a {
+        font-size: 14px;
+    }
+
+    .contact-box {
+        padding: 15px;
+    }
+
+    .right-contact-us {
+        margin-top: 15px;
+    }
+
+    .btn-send {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-us-container {
+        padding: 20px;
+    }
+
+    .left-contact-us-heading h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .left-contact-us-heading p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .help-title {
+        font-size: 16px;
+    }
+
+    .help-desc li,
+    .help-desc span,
+    .help-desc a {
+        font-size: 12px;
+    }
+
+    .contact-box {
+        padding: 10px;
+    }
+
+    .right-contact-us {
+        margin-top: 10px;
+    }
+
+    .btn-send {
+        font-size: 14px;
+    }
 }

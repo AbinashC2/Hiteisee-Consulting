@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,19 +6,20 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Container Styles */
 .about-us-container {
     width: 100%;
     background: linear-gradient(to bottom, rgba(240, 240, 240, 0.8), rgba(255, 255, 255, 0.8)), url('https://example.com/background-image.jpg');
-    /* Replace with actual image URL */
     background-size: cover;
     background-position: center;
     color: #333;
     padding-bottom: 50px;
 }
+
+/* Banner Styles */
 .about-banner-img {
     height: 35vh;
-    background-image: linear-gradient(90deg, rgba(34, 139, 34, 0.3) 0%, rgba(34, 139, 34, 0.3) 100%),
-     url("../assets/banner_image.svg");
+    background-image: linear-gradient(90deg, rgba(34, 139, 34, 0.3) 0%, rgba(34, 139, 34, 0.3) 100%), url("../assets/banner_image.svg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -38,10 +40,57 @@
     font-size: 3em;
     font-weight: bold;
     color: #041939;
-    font-size: 48px;
-    font-weight: 600;
 }
 
+/* Core Values Styles */
+.core_values-container {
+    background-color: #fff;
+    padding: 2% 10%;
+}
+
+.core_values-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.core_values-heading {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 45px;
+    background: linear-gradient(to right, #FF7E00, #FF4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 51px;
+    position: relative;
+}
+
+.core_values-underline {
+    width: 60px;
+    height: 8px;
+    background-color: #186EEF;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+}
+
+.core_values-left-container, .core_values-right-container {
+    width: 45%;
+}
+
+.core_values-text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #424657;
+}
+
+.core_values-right-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Styles */
 .about-us-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -66,7 +115,6 @@
     margin-bottom: 15px;
 }
 
-
 .section-text {
     font-size: 1.1em;
     line-height: 1.6;
@@ -83,59 +131,84 @@
     margin-bottom: 8px;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .about-us-heading {
+        font-size: 2.5em;
+    }
 
+    .core_values-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .core_values-left-container, .core_values-right-container {
+        width: 100%;
+    }
 
-.core_values-container {
-    height: 65vh;
-    background-color: #fff;
+    .core_values-right-container img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-us-section {
+        padding: 15px;
+    }
+
+    .section-heading {
+        font-size: 1.8em;
+    }
 }
-.core_values-content {
-    padding-inline: 10%;
-    padding-block: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media (max-width: 768px) {
+    .about-banner-img {
+        height: 30vh;
+    }
+
+    .about-us-heading {
+        font-size: 2em;
+    }
+
+    .core_values-heading {
+        font-size: 36px;
+    }
+
+    .section-heading {
+        font-size: 1.6em;
+    }
+
+    .section-text, .core_values-text p {
+        font-size: 1em;
+    }
 }
-.core_values-heading{
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 45px;
-    background: linear-gradient(to right, #FF7E00, #FF4500);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 51px;
-    position: relative;
-}
-.core_values-underline {
-    width: 60px;
-    height: 8px;
-    background-color: #186EEF;
-    border-radius: 5px;
-    /* margin: 0 auto;  */
-    position: relative;
-    top: 10px;
-}
-.core_values-left-container {
-    width: 45vw;
-}
-.core_values-text p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #424657;
-}
-.core_values-right-container {
-    width: 45vw;
-}
-.core_values-right-container img {
-    height: 55vh;
-}
-.correct-icon{
-    color: green;
-    font-size: 20px;
-    margin: 5px;
-}
-.span-text{
-    display: flex;
-    align-items: start;
+
+@media (max-width: 480px) {
+    .about-banner-img {
+        height: 25vh;
+    }
+
+    .about-us-heading {
+        font-size: 1.5em;
+    }
+
+    .core_values-heading {
+        font-size: 28px;
+    }
+
+    .core_values-underline {
+        width: 40px;
+        height: 6px;
+    }
+
+    .section-heading {
+        font-size: 1.4em;
+    }
+
+    .section-text, .core_values-text p {
+        font-size: 0.9em;
+    }
+
+    .values-list {
+        padding-left: 15px;
+    }
 }
