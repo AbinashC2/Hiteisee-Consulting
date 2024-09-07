@@ -8,6 +8,10 @@ import ITITES from "../assets/IT ITES.svg";
 import SmartInfra from '../assets/smart infra.svg';
 import BusinessAdvisory from '../assets/business advisory.svg';
 import stats from '../assets/stats.png';
+// import bg from "../assets/hero-bg.svg";
+import bg from "../assets/smart infra.svg";
+
+
 
 const Home = () => {
   const [completed, setCompleted] = useState(0);
