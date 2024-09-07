@@ -101,10 +101,10 @@ const Careers = () => {
             </div> */}
                         <div className="career-content">
                 <div className="career-heading">
-                    <p>Join Our Journey at SOUL</p>
+                    <p>Join Our Journey at Hiteisee</p>
                 </div>
                 <div className="career-text">
-                    <p>Ready to make a difference? Explore our current openings and start your journey with SOUL. <br />
+                    <p>Ready to make a difference? Explore our current openings and start your journey with Hiteisee. <br />
                         Together, we can transform businesses and create a sustainable future for all.</p>
                 </div>
                 <div className="career-search">
@@ -135,7 +135,7 @@ const Careers = () => {
         <p>Didn’t Find Your Desired Role?</p>
         <div className="underline3"></div>
 
-        <h4>Don’t worry. At SOUL, we are always on the lookout for passionate, talented individuals who share our commitment to sustainable business transformation and innovation. While there may not be an open position that matches your specific skills or career goals at this moment, we encourage you to stay connected with us.</h4>
+        <h4>Don’t worry. At Hiteisee, we are always on the lookout for passionate, talented individuals who share our commitment to sustainable business transformation and innovation. While there may not be an open position that matches your specific skills or career goals at this moment, we encourage you to stay connected with us.</h4>
     </div>
 
     <div className="right-form-container">
