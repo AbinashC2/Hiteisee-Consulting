@@ -65,6 +65,27 @@
 .menu-icon .bar.open:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+.contact-container{
+  padding-right: 4%;
+}
+.consulting-button {
+  background: linear-gradient(135deg, #e5b738, #26e067); /* Gradient background */
+  color: white; /* Text color */
+  padding: 12px 24px; /* Padding for the button */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  cursor: pointer; /* Pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.consulting-button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse the gradient on hover */
+  transform: translateY(-3px); /* Lift button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

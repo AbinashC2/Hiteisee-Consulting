@@ -9,10 +9,12 @@ import AboutUs from './Componets/AboutUs';
 import Careers from './Componets/Careers';
 import BlogPage from './Componets/BlogPage';
 import RequestQuote from './Componets/RequestQuote';
+import Gallery from './Componets/Gallery';
 
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import ContactUs from './Componets/ContactUs';
+import Hero from './Componets/Hero';
 
 function App() {
   return (
@@ -20,7 +22,11 @@ function App() {
       <Header />
 
       <Routes>
+       
         <Route path="/" element={<Home />} />
+        <Route path="/" element={<Hero />} />
+
+
         <Route path="/services" element={<Services />} />
         <Route path="/customers" element={<Customers />} />
         <Route path="/BlogPage" element={<BlogPage />} />
@@ -28,6 +34,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/Contact" element={<ContactUs />} />
         <Route path="/Quote" element={ <RequestQuote />} />      
+        <Route path="/gallery" element={ <Gallery />} /> 
       </Routes>
       <Footer />
     </Router>

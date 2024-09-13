@@ -1,0 +1,130 @@
+/* Make sure the container takes up the full viewport height */
+.hero-container {
+    background-image: url("../assets/Groupbg.svg");
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    /* background: linear-gradient(72.77deg, #49C246 2.73%, #B0F392 92.23%); */
+    padding-inline: 5%;
+
+}
+
+/* Style for the left side with text and button */
+.hero-left {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    /* Ensure text is above the background image */
+}
+
+.heading-home {
+    margin: 0 auto;
+}
+
+.welcome {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #3c3e54;
+}
+
+.welcome-2 {
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;
+    color: #3c3e54;
+
+}
+
+.text {
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.unlock-text {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;
+
+}
+
+.hiteisee {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Button Styles */
+.button-explore {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: linear-gradient(135deg, #44c948, #2b902f);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-self:flex-start;
+}
+
+.button-explore:hover {
+    background: linear-gradient(135deg, #2b902f, #44c948);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.button-explore:active {
+    background: linear-gradient(135deg, #44c948, #2b902f);
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the right side with background image */
+.hero-right {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-right img {
+    height: 70%;
+    width: 70%;
+}
+
+/* Add a subtle animation to the text */
+.hero-left p,
+.hero-left h1 {
+    text-align: left;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

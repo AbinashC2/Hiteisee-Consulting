@@ -8,10 +8,10 @@ import teamwork from "../assets/teamwork.jpg";
 const blogs = [
   {
     id: 1,
-    title: "Exploring React: A Guide for Beginners",
+    title: "MASK",
     excerpt:
-      "React is a powerful library for building user interfaces. In this guide, we explore the basics and provide a roadmap for beginners.",
-    author: "Jane Doe",
+      "It was a chilled winter afternoon. I was present in the morose atmosphere of one my ex-colleagues residence whose son Rama met an untimely death. Rama’s Parents, Wife and nine year young Son were crying bitterly sitting next to his dead body. I can never forget this experience what I witnessed on that day...",
+    author: "Dr. Suvendu Das",
     date: "August 4, 2024",
     imageUrl: corporate,
   },

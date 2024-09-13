@@ -18,7 +18,7 @@ export const Header = () => {
           </div>
 
           <div className="contact-container">
-            <div className="contact-item">
+            {/* <div className="contact-item">
               <div className="contact-icon email-icon"></div>
               <div className="contact-text">
                 <div className="contact-title">Email</div>
@@ -32,7 +32,7 @@ export const Header = () => {
                 <div className="contact-title">Call</div>
                 <div className="contact-detail">+1235 2355 98</div>
               </div>
-            </div>
+            </div> */}
 
             <button className="consulting-button">Free Consulting</button>
           </div>
@@ -61,6 +61,9 @@ export const Header = () => {
               </li>
               <li>
                 <Link to="/BlogPage" onClick={toggleMenu}>Blog</Link>
+              </li>
+              <li>
+                <Link to="/gallery" onClick={toggleMenu}>Gallery</Link>
               </li>
               <li>
                 <Link to="/contact" onClick={toggleMenu}>Contact</Link>

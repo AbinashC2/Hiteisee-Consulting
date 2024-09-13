@@ -11,7 +11,7 @@ body {
 
 /* Services Container */
 .services-container {
-    background-color: #f7f7f7;
+    background-color: #E9F4E3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +76,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    gap: 146px;
+    gap: 60px;
     flex-wrap: wrap;
     padding-inline: 11%;
 }
@@ -165,5 +165,20 @@ body {
 
     .card {
         width: 100%;
+    }
+    .services-box-header-heading p {
+        font-size: 2rem;
+    }
+    .services-box{
+        margin-bottom: 0;
+    }
+    .service-banner {
+        height: 21vh;
+        width: 100%;
+        background: linear-gradient(rgba(40, 97, 57, 0.5), rgba(40, 97, 57, 0.5)), url(/src/assets/service.svg) no-repeat center center;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        /* margin-bottom: 30px; */
     }
 }

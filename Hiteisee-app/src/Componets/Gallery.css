@@ -1,0 +1,93 @@
+/* Gallery container styling */
+.gallery-container {
+    background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  /* .services-banner2 {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .services-heading {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+  } */
+  
+  /* Grid container styling */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-inline: 5%;
+    padding-block: 5%;
+  }
+  
+  /* Individual gallery item styling */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Image styling */
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.4s ease;
+  }
+  
+  /* Overlay styling */
+  .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+  }
+  
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+  
+  /* Overlay info styling */
+  .gallery-info {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .services-heading {
+      font-size: 2rem;
+    }
+    
+    .gallery-info {
+      font-size: 1.2rem;
+      padding: 15px;
+    }
+  }
+  

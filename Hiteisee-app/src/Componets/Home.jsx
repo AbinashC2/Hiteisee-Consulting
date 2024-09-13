@@ -10,6 +10,7 @@ import BusinessAdvisory from '../assets/business advisory.svg';
 import stats from '../assets/stats.png';
 // import bg from "../assets/hero-bg.svg";
 import bg from "../assets/smart infra.svg";
+import Hero from './Hero';
 
 
 
@@ -43,7 +44,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='container'>
+      {/* <div className='container'>
         <div className="home">
           <div className="heading-home">
             <p className='welcome'>Welcome to <span className='hiteisee'>Hiteisee</span></p> 
@@ -55,10 +56,11 @@ const Home = () => {
             <Link to="/services" className="button-link">Explore</Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Customers Section */}
-      <br /><br />
+      
+      <Hero/>
       <Customers />
       <br /><br />
 
