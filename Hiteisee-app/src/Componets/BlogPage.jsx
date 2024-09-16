@@ -1,6 +1,7 @@
 import React from "react";
 import "./BlogPage.css";
 import corporate from "../assets/corporate.jpg";
+import mask from "../assets/mask.png";
 import tech from "../assets/technology.jpg";
 import teamwork from "../assets/teamwork.jpg";
 
@@ -13,7 +14,7 @@ const blogs = [
       "It was a chilled winter afternoon. I was present in the morose atmosphere of one my ex-colleagues residence whose son Rama met an untimely death. Rama’s Parents, Wife and nine year young Son were crying bitterly sitting next to his dead body. I can never forget this experience what I witnessed on that day...",
     author: "Dr. Suvendu Das",
     date: "August 4, 2024",
-    imageUrl: corporate,
+    imageUrl: mask,
   },
   {
     id: 2,

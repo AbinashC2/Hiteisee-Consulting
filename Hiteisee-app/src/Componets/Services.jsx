@@ -18,7 +18,7 @@ const Services = () => {
             <p>We offer a comprehensive range of services</p>
           </div>
           <div className="services-box-header-text">
-            <p>Empower businesses to embrace innovation, optimize operations, and achieve sustainable growth with SOUL.</p>
+            <p>Empower businesses to embrace innovation, optimize operations, and achieve sustainable growth with Hiteisee.</p>
           </div>
         </div>
 

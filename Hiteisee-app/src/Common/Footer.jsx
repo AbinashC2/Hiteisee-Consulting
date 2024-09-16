@@ -23,13 +23,13 @@ export const Footer = () => {
             <img src={Logo} alt="#company-logo" />
           </div> */}
           <div className="contact-number">
-            <span><FontAwesomeIcon icon={faPhone} className='phone-logo' /> </span><span className='phone-number-footer'>+91 7077769335</span>
+            <span><FontAwesomeIcon icon={faPhone} className='phone-logo' /> </span><span className='phone-number-footer'>+91 9937509666</span>
           </div>
           <div className="contact-mail">
-           <span><FontAwesomeIcon icon={faEnvelope} className='mail-logo'/> </span><span className="mail-footer">soul@soulunileaders.com</span>
+           <span><FontAwesomeIcon icon={faEnvelope} className='mail-logo'/> </span><span className="mail-footer">Hiteisee Consulting</span>
           </div>
           <div className="contact-mail">
-           <span><FontAwesomeIcon icon={faLocationDot} className='location-logo'/> </span><span className="location-details-footer">E/42/D, Infocity Avenue, Chandaka Industrial Estate, Bhubaneswar, <br /> <span className="location-details-2-footer">Odisha, India - 751024</span></span>
+           <span><FontAwesomeIcon icon={faLocationDot} className='location-logo'/> </span><span className="location-details-footer">Near Damana colony, <br /> <span className="location-details-2-footer">Odisha, India - 751024</span></span>
           </div>
 
           <div className="social-media-footer">
@@ -50,12 +50,14 @@ export const Footer = () => {
         <div className="right-footer">
           <div className="quick-links">
             <div className="footer-right-heading">QUICK LINKS</div>
-              <Link to='/landing' className="home-footer">Home</Link>
-              <Link to='/about-us' className="about-us-footer">About Us</Link>
-              <Link to='/products' className="products-footer">Products</Link>
-              <Link to='/key-projects' className="key-projects-footer">Key Projects</Link>
-              <Link to='/career' className="career-footer">Career</Link>
-              <Link to='/contact-us' className="contact-footer">Contact Us</Link>
+              <Link to='/' className="home-footer">Home</Link>
+              <Link to='/about' className="about-us-footer">About Us</Link>
+              <Link to='/careers' className="career-footer">Careers</Link>
+              <Link to='/BlogPage' className="key-projects-footer">BlogPage</Link>
+              <Link to='/Quote' className="career-footer">RequestQuote</Link>
+              <Link to='/Contact' className="contact-footer">Contact Us</Link>
+              <Link to='/gallery' className="contact-footer">Gallery</Link>
+              <Link to='/services' className="contact-footer">Services </Link>
           </div>
         </div>
       </div>
@@ -64,7 +66,7 @@ export const Footer = () => {
           <hr />
       </div>
       <div className="copyrights">
-        <p>©2024 SOUL Limited.</p>
+        <p>©2024 Hiteisee Consulting.</p>
       </div>
     </div>
   )

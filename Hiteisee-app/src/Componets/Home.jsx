@@ -61,7 +61,7 @@ const Home = () => {
       {/* Customers Section */}
       
       <Hero/>
-      <Customers />
+
       <br /><br />
 
       {/* Services Section */}
@@ -193,7 +193,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+        <Customers />
         <br /><br /><br /><br />
 
         <div className="img-parent">
@@ -201,6 +201,8 @@ const Home = () => {
         <img src={stats} alt="" />
         </div>
       </div>
+
+      
 
       {/* Project Statistics Section */}
      

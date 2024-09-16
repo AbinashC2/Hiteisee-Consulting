@@ -1,13 +1,29 @@
 import React from 'react';
 import './Gallery.css';
-import corporate from '../assets/corporate.jpg';
-import tech from '../assets/technology.jpg';
-import teamwork from '../assets/teamwork.jpg';
+// import corporate from '../assets/corporate.jpg';
+// import tech from '../assets/technology.jpg';
+// import teamwork from '../assets/teamwork.jpg';
+import Odisha_CSR_Conclave from '../assets/Odisha _CSR_Conclave.jpg';
+import Smart_infra from '../assets/Smart_infra.jpg';
+import CII_IR_Conclave from '../assets/CII_IR_Conclave.jpg';
+import workshop from '../assets/workshop.jpg';
+
 
 const images = [
-  { src: corporate, alt: 'Corporate Consulting' },
-  { src: tech, alt: 'Technology Solutions' },
-  { src: teamwork, alt: 'Teamwork' },
+  { src: Odisha_CSR_Conclave, alt: 'Odisha CSR Conclave' },
+  { src: Smart_infra, alt: 'Smart Infra' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: workshop, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
+  { src: CII_IR_Conclave, alt: 'CII IR Conclave' },
   // Add more images as needed
 ];
 

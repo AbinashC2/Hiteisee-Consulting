@@ -30,7 +30,7 @@ export default function ContactUs() {
                             <ul>
                                 <li>General Inquiries: <span>Have a question about our services or need more information? Reach out to us, and our team will be happy to assist you.</span></li>
                                 <li>Client Services: <span>Are you a business looking to explore sustainable solutions or need consultation on business transformation? Connect with our client services team to discuss how we can support your goals.</span></li>
-                                <li>Careers: <span>Interested in joining SOUL? Visit our <Link to='/career-jd'>Careers Page</Link> for current opportunities or <Link to='/career-jd'>Submit Your Resume</Link> if you’re looking for future roles. For any specific queries about careers, our HR team is here to help.</span></li>
+                                <li>Careers: <span>Interested in joining Hiteisee? Visit our <Link to='/careers'>Careers Page</Link> for current opportunities or <Link to='/careers'>Submit Your Resume</Link> if you’re looking for future roles. For any specific queries about careers, our HR team is here to help.</span></li>
                                 <li>Media and Partnerships: <span>For media inquiries, partnerships, or collaboration opportunities, please contact our media relations team.</span></li>
                             </ul>
                         </div>
