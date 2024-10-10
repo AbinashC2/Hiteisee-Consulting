@@ -99,7 +99,7 @@ const Careers = () => {
                     </form>
                 </div>
             </div> */}
-                        <div className="career-content">
+                        {/* <div className="career-content">
                 <div className="career-heading">
                     <p>Join Our Journey at Hiteisee</p>
                 </div>
@@ -126,7 +126,7 @@ const Careers = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             <div className="desired-role-container">
     <div className="desired-role-bgi"></div>
