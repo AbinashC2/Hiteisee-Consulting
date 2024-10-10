@@ -31,7 +31,11 @@ const Gallery = () => {
   return (
     <div className='gallery-container'>
       <div className="services-banner2">
-        <h2 className="services-heading">Gallery</h2>
+    
+            <div className="contact-us-heading">
+                <h1>Gallery</h1>
+            </div>
+      
       </div>
       <div className='gallery-grid'>
         {images.map((image, index) => (

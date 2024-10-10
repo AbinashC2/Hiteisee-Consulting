@@ -6,8 +6,10 @@ const AboutUs = () => {
     <div className="about-us-container">
       <div className="about-banner-img">
       <div className="about-us-banner">
-        <h1 className="about-us-heading">About Us</h1>
-      </div>
+      <div className="contact-us-heading">
+                <h1>AboutUs</h1>
+            </div>
+                  </div>
       </div>
 
 

@@ -57,6 +57,9 @@ export const Header = () => {
                 <Link to="/services" onClick={toggleMenu}>Services</Link>
               </li>
               <li>
+                <Link to="/projcts" onClick={toggleMenu}>KeyProjects</Link>
+              </li>
+              <li>
                 <Link to="/careers" onClick={toggleMenu}>Career</Link>
               </li>
               <li>
