@@ -15,6 +15,8 @@ import Gallery from './Componets/Gallery';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import ContactUs from './Componets/ContactUs';
 import Hero from './Componets/Hero';
+import KeyProjects from './Componets/KeyProjects/KeyProjects';
+import Projects from './Componets/Projects';
 
 function App() {
   return (
@@ -28,6 +30,10 @@ function App() {
 
 
         <Route path="/services" element={<Services />} />
+        <Route path="/keyprojcts" element={<KeyProjects />} />
+        <Route path="/projcts" element={<Projects />} />
+
+
         <Route path="/customers" element={<Customers />} />
         <Route path="/BlogPage" element={<BlogPage />} />
         <Route path="/about" element={<AboutUs />} />
