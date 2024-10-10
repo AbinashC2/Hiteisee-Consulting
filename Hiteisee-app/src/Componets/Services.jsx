@@ -9,7 +9,9 @@ const Services = () => {
   return (
     <div className="services-container">
       <div className="service-banner">
-        <h2 className="services-heading">Our Best Services</h2>
+        <div className="contact-us-heading">
+          <h1>Services</h1>
+        </div>
       </div>
 
       <div className="services-box">
@@ -52,11 +54,11 @@ const Services = () => {
                   <img src={BusinessAdvisory} alt="Business Advisory" />
                 </div>
                 <div className="card-title">
-                Strategy Consulting Services
+                  Strategy Consulting Services
                 </div>
                 <div className="card-desc">
                   <p>Management of Organizational Values
-                  Redefining business strategies.</p>
+                    Redefining business strategies.</p>
                 </div>
               </div>
 
@@ -65,25 +67,11 @@ const Services = () => {
                   <img src={BusinessAdvisory} alt="Business Advisory" />
                 </div>
                 <div className="card-title">
-                Strategy Consulting Services
+                  Strategy Consulting Services
                 </div>
                 <div className="card-desc">
                   <p>Management of Organizational Values
-                  Redefining business strategies.</p>
-                </div>
-              </div>
-
-
-              <div className="card">
-                <div className="card-img">
-                  <img src={BusinessAdvisory} alt="Business Advisory" />
-                </div>
-                <div className="card-title">
-                Strategy Consulting Services
-                </div>
-                <div className="card-desc">
-                  <p>Management of Organizational Values
-                  Redefining business strategies.</p>
+                    Redefining business strategies.</p>
                 </div>
               </div>
 
@@ -93,11 +81,25 @@ const Services = () => {
                   <img src={BusinessAdvisory} alt="Business Advisory" />
                 </div>
                 <div className="card-title">
-                Strategy Consulting Services
+                  Strategy Consulting Services
                 </div>
                 <div className="card-desc">
                   <p>Management of Organizational Values
-                  Redefining business strategies.</p>
+                    Redefining business strategies.</p>
+                </div>
+              </div>
+
+
+              <div className="card">
+                <div className="card-img">
+                  <img src={BusinessAdvisory} alt="Business Advisory" />
+                </div>
+                <div className="card-title">
+                  Strategy Consulting Services
+                </div>
+                <div className="card-desc">
+                  <p>Management of Organizational Values
+                    Redefining business strategies.</p>
                 </div>
               </div>
 
@@ -106,11 +108,11 @@ const Services = () => {
                   <img src={BusinessAdvisory} alt="Business Advisory" />
                 </div>
                 <div className="card-title">
-                Strategy Consulting Services
+                  Strategy Consulting Services
                 </div>
                 <div className="card-desc">
                   <p>Management of Organizational Values
-                  Redefining business strategies.</p>
+                    Redefining business strategies.</p>
                 </div>
               </div>
 
