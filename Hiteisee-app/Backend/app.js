@@ -1,6 +1,6 @@
-import express from "express";
-const app = express();
-let port = process.env.PORT || 8000;
+import express from 'express'
+
+let port =  8000;
 import cors from 'cors';
 // console.log(__dirname, "dirname")
 // require('dotenv').config({path: path.resolve(__dirname, '../.env') })
@@ -10,6 +10,11 @@ import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import nodeMailer from "nodemailer";
 import multer from "multer";
+import bodyParser from 'body-parser'
+
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}))
 
 // Get the current directory
 const __filename = fileURLToPath(import.meta.url);
@@ -70,36 +75,15 @@ app.get('/',async (req,res)=>{
     }
 })
  
-app.post('/send-email-hr', upload.single('resume'), (req,res) =>{
+app.post('/career-send-mail', (req,res) =>{
     console.log(12423747823647234);
     console.log('body',req.body);
 
     const {name,email,phone,designation} = req.body;
     console.log({name,email,phone,designation});
-    const resumePath = req.file ? req.file.path : null;
+    // const resumePath = req.file ? req.file.path : null;
 
-    let information = transPorter.sendMail({
-        from: process.env.EMAIL_FROM,
-        to: process.env.EMAIL_TO,
-        subject: `Job Application For ${designation}`,
-        text: `New job application.\n\nCandidate Details:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nDesignation: ${designation}`,
-        attachments: [
-            {
-              filename: req.file.originalname, // Resume file name
-              path: resumePath, // Resume file path
-            }
-          ]
-    }, (error,info) => {
-        if(error){
-            console.log("Error: ",error);
-            res.status(500).json({message: "Error sending mail", error});
-        }
-        else{
-            console.log("Mail sent " + info.response);
-            res.status(200).json({message: "Email sent successfully"})
-        }
-    })
-
+    
 
 })
 app.listen(port, (err) =>{
