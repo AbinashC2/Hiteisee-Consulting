@@ -90,3 +90,4 @@ app.listen(port, (err) =>{
     if(err) throw err;
     console.log(`server is listening on port ${port}`)
 })
+//  node rest api is not tested attachments
