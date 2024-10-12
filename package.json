@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "command_to_start_dev_server"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +15,8 @@
   "devDependencies": {
     "http-server": "^14.1.1",
     "live-server": "^1.2.2",
-    "serve": "^14.2.3"
+    "serve": "^14.2.3",
+    "vite": "^5.4.8"
   },
   "dependencies": {
     "multer": "^1.4.5-lts.1"

@@ -4,48 +4,49 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faUser, faEnvelope, faPhone, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 
+import axios from 'axios'
+
 const Careers = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        resume: null,
-    });
+
+    const[userName,setUserName] = useState('');
+    const[userEmail,setUserEmail] = useState('');
+    const[userPhone,setUserPhone] = useState('');
+
+    
     const [submissionStatus, setSubmissionStatus] = useState('');
 
-    const handleChange = (e) => {
-        const { name, value, files } = e.target;
-        setFormData({
-            ...formData,
-            [name]: files ? files[0] : value,
-        });
-    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const formPayload = new FormData();
-        formPayload.append('name', formData.name);
-        formPayload.append('email', formData.email);
-        formPayload.append('phone', formData.phone);
-        formPayload.append('resume', formData.resume);
+        const formData = new FormData();
 
-        try {
-            const response = await fetch('http://localhost:8000/send-email-hr', {
-                method: 'POST',
-                body: formPayload,
-            });
+        formData.append('name',userName);
+        formData.append('email',userEmail);
+        formData.append('phone',userPhone);
+        // formData.append('resume',file);
+          
+        formData.forEach((value, key) => {
+            console.log(key, value);
+        });
 
-            if (response.ok) {
-                setSubmissionStatus('Form submitted successfully! We will review your application.');
-                setFormData({ name: '', email: '', phone: '', resume: null }); // Reset form
-            } else {
-                setSubmissionStatus('Failed to submit form. Please try again later.');
+        console.log('Name: ', userName)
+        
+        //Send the data to backend through axios
+
+        axios.post('http://localhost:8000/career-send-mail',formData, {
+            headers:{
+                'Content-Type': 'application/json'
             }
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            setSubmissionStatus('An error occurred. Please try again.');
-        }
+        })
+        .then(response => {
+            console.log("Form submitted successfully", response.data);
+            
+        })
+        .catch(error => {
+            console.log("Error in submitting form ", error);
+            
+        })
     };
 
     return (
@@ -56,7 +57,72 @@ const Careers = () => {
             </div>
             </div>
 
-            <div className="career-content">
+            {/* <div className="careers-content">
+                <h1 className="content-heading">Go beyond the expected.</h1>
+                <p className="intro-text">
+                    A global leader and pioneer in business strategy, Boston Consulting Group (BCG) works closely with giants in the corporate world and society to take on their most important challenges and tap into their greatest opportunities. We go beyond ideas to design solutions and implement meaningful action. We’re dedicated to helping our clients do amazing things and unlocking the potential of those who advance the world. Join us, and you can too.
+                </p>
+
+                <div className="positions">
+                    <h2 className="positions-heading">Open Positions</h2>
+                    <ul className="positions-list">
+                        <li>Software Developer</li>
+                        <li>Data Analyst</li>
+                        <li>Project Manager</li>
+                        <li>Marketing Specialist</li>
+                    </ul>
+                </div>
+
+                <div className="application-form">
+                    <h2 className="form-heading">Apply Now</h2>
+                    <form onSubmit={handleSubmit}>
+                        <div className="form-group">
+                            <label htmlFor="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="message">Cover Letter</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                rows="5"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="resume">Upload Resume</label>
+                            <input
+                                type="file"
+                                id="resume"
+                                name="resume"
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <button type="submit" className="submit-button">Submit Application</button>
+                    </form>
+                </div>
+            </div> */}
+                        {/* <div className="career-content">
                 <div className="career-heading">
                     <p>Join Our Journey at Hiteisee</p>
                 </div>
@@ -84,7 +150,7 @@ const Careers = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             <div className="desired-role-container">
                 <div className="desired-role-bgi"></div>
@@ -95,7 +161,7 @@ const Careers = () => {
                 </div>
 
                 <div className="right-form-container">
-                    <div className="form">
+                    <form className="form" action='/career-send-mail' method= 'POST'>
                         <div className="form-heading">
                             <h1>Apply for this Position</h1>
                         </div>
@@ -106,8 +172,8 @@ const Careers = () => {
                                     type="text"
                                     name="name"
                                     placeholder='Your Full Name*'
-                                    value={formData.name}
-                                    onChange={handleChange}
+                                    value={userName}
+                                    onChange={(e) => setUserName(e.target.value)}
                                     required
                                 />
                             </div>
@@ -117,8 +183,8 @@ const Careers = () => {
                                     type="email"
                                     name="email"
                                     placeholder='Your Email*'
-                                    value={formData.email}
-                                    onChange={handleChange}
+                                    value={userEmail}
+                                    onChange={(e) => setUserEmail(e.target.value)}
                                     required
                                 />
                             </div>
@@ -129,30 +195,17 @@ const Careers = () => {
                                     name="phone"
                                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                     placeholder='Contact Number*'
-                                    value={formData.phone}
-                                    onChange={handleChange}
+                                    value={userPhone}
+                                    onChange={(e) => setUserPhone(e.target.value)}
                                     required
                                 />
                             </div>
-                            <div className="input-cv">
-                                <FontAwesomeIcon className="attach-icon" icon={faPaperclip} />
-                                <input
-                                    type="file"
-                                    accept=".pdf, .docx"
-                                    id="file-upload"
-                                    name="resume"
-                                    onChange={handleChange}
-                                    required
-                                />
-                                <label htmlFor="file-upload">Attach Your Resume*</label>
-                                <p>Attach doc, pdf, docx - less than 5mb</p>
-                            </div>
-
+                            
                             <div className="form-btn">
                                 <button className='btn-submit' onClick={handleSubmit}>Submit</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                     {submissionStatus && <p className="submission-status">{submissionStatus}</p>}
                 </div>
             </div>
